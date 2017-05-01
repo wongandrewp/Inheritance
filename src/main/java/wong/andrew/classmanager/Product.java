@@ -9,6 +9,12 @@ public class Product {
     private int id;
     private int quantity;
 
+    public Product(double price, int id, int quantity) {
+        this.price = price;
+        this.id = id;
+        this.quantity = quantity;
+    }
+
     public double getPrice() {
         return price;
     }
