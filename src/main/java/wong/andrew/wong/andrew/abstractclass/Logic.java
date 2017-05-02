@@ -8,5 +8,6 @@ public class Logic {
 //        String pinStringEntered = ATM.userStringInput("Please enter a pin");
 //        int pinIntEntered = Integer.parseInt(pinStringEntered);
 
+
     }
 }

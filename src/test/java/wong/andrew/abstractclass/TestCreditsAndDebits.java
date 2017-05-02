@@ -1,6 +1,9 @@
-package wong.andrew.wong.andrew.abstractclass;
+package wong.andrew.abstractclass;
 
 import org.junit.Test;
+import wong.andrew.wong.andrew.abstractclass.Account;
+import wong.andrew.wong.andrew.abstractclass.CheckingAccount;
+
 import static org.junit.Assert.*;
 
 /**

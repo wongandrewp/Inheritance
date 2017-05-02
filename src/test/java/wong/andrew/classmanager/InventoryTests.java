@@ -43,9 +43,10 @@ public class InventoryTests {
 
         //Act
         manager.addToInventory(orange); //adds orange to inventory
+        int actualSize =inventory.getProducts().size();
 
         //Assert
-        assertEquals(inventory.getProducts().size(), expectedSize); //assert both inventories have an orange
+        assertEquals(expectedSize, actualSize); //assert both inventories have an orange
     }
 
     @Test

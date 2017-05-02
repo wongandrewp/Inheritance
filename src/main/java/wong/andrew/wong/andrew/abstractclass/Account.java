@@ -23,5 +23,8 @@ public abstract class Account {
             System.out.println("Insufficient Funds");
 
     }
+    public void setPin(int pin){
+        this.pin = pin;
+    }
 
 }
