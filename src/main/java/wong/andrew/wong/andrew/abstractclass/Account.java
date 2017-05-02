@@ -5,6 +5,7 @@ package wong.andrew.wong.andrew.abstractclass;
  */
 public abstract class Account {
     private double balance;
+    private int pin;
 
     public double getBalance(){
         return balance;
@@ -20,7 +21,7 @@ public abstract class Account {
             this.balance -= amount;
         else
             System.out.println("Insufficient Funds");
-        //make display class for ATM
+
     }
 
 }
