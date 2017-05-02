@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c0de72c-d493-44c3-bab2-e67c78794638" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Manager.java" afterPath="$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Manager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Main.java" afterPath="$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/wong/andrew/classmanager/InventoryTests.java" afterPath="$PROJECT_DIR$/src/test/java/wong/andrew/classmanager/InventoryTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="30">
+              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="3" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InventoryTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InventoryTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/wong/andrew/classmanager/InventoryTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="99" column="4" lean-forward="false" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
+            <state relative-caret-position="105">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#445#454#0" expanded="true" />
@@ -63,7 +63,7 @@
       <file leaf-file-name="Manager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="294">
               <caret line="29" column="59" lean-forward="false" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
               <folding>
                 <element signature="e#606#607#0" expanded="true" />
@@ -124,10 +124,10 @@
         <option value="$PROJECT_DIR$/src/main/java/wong/andrew/wong/andrew/abstractclass/ATM.java" />
         <option value="$PROJECT_DIR$/src/main/java/wong/andrew/wong/andrew/abstractclass/Logic.java" />
         <option value="$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Inventory.java" />
         <option value="$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Manager.java" />
         <option value="$PROJECT_DIR$/src/test/java/wong/andrew/classmanager/InventoryTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Main.java" />
       </list>
     </option>
   </component>
@@ -360,33 +360,7 @@
       <recent name="wong.andrew.classmanager" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InventoryTests.increaseQuantityOfProductInInventory_IsProduct_QuantityIsIncrease">
-    <configuration default="false" name="InventoryTests.sumUpInventoryValue_SimpleProducts_ReturnsSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="wong.andrew.classmanager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Inheritance" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="wong.andrew.classmanager" />
-      <option name="MAIN_CLASS_NAME" value="wong.andrew.classmanager.InventoryTests" />
-      <option name="METHOD_NAME" value="sumUpInventoryValue_SimpleProducts_ReturnsSum" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="InventoryTests.addToInventory_AddProduct_ProductAddedToInventory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -489,6 +463,26 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="wong.andrew.classmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="wong.andrew.classmanager.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Inheritance" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -872,19 +866,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.InventoryTests.sumUpInventoryValue_SimpleProducts_ReturnsSum" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.InventoryTests.addToInventory_AddProduct_ProductAddedToInventory" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.InventoryTests.RemoveFromInventory_RemoveProduct_ProductRemovedFromInventory" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.InventoryTests.decreaseQuantityOfProductInInventory_ProductsHasEnoughQuantity_QuantityIsDecreased" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.InventoryTests.increaseQuantityOfProductInInventory_IsProduct_QuantityIsIncrease" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.InventoryTests.addToInventory_AddProduct_ProductAddedToInventory" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.InventoryTests.RemoveFromInventory_RemoveProduct_ProductRemovedFromInventory" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.InventoryTests.decreaseQuantityOfProductInInventory_ProductsHasEnoughQuantity_QuantityIsDecreased" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.InventoryTests.increaseQuantityOfProductInInventory_IsProduct_QuantityIsIncrease" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.InventoryTests.increaseQuantityOfProductInInventory_IsProduct_QuantityIsIncrease" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.InventoryTests.decreaseQuantityOfProductInInventory_ProductsHasEnoughQuantity_QuantityIsDecreased" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.InventoryTests.RemoveFromInventory_RemoveProduct_ProductRemovedFromInventory" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.InventoryTests.addToInventory_AddProduct_ProductAddedToInventory" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.InventoryTests.sumUpInventoryValue_SimpleProducts_ReturnsSum" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.InventoryTests.increaseQuantityOfProductInInventory_IsProduct_QuantityIsIncrease" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.InventoryTests.decreaseQuantityOfProductInInventory_ProductsHasEnoughQuantity_QuantityIsDecreased" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.InventoryTests.RemoveFromInventory_RemoveProduct_ProductRemovedFromInventory" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.InventoryTests.addToInventory_AddProduct_ProductAddedToInventory" />
       </list>
     </recent_temporary>
   </component>
@@ -900,7 +894,7 @@
       <updated>1493655237987</updated>
       <workItem from="1493655241729" duration="15591000" />
       <workItem from="1493694144880" duration="1508000" />
-      <workItem from="1493745470991" duration="11256000" />
+      <workItem from="1493745470991" duration="11636000" />
     </task>
     <servers />
   </component>
@@ -937,7 +931,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28355000" />
+    <option name="totallyTimeSpent" value="28735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="236" y="-1013" width="1280" height="722" extended-state="0" />
@@ -1286,14 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -1319,7 +1305,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="294">
           <caret line="29" column="59" lean-forward="false" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
           <folding>
             <element signature="e#606#607#0" expanded="true" />
@@ -1332,12 +1318,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/wong/andrew/classmanager/InventoryTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="99" column="4" lean-forward="false" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
+        <state relative-caret-position="105">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#445#454#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/classmanager/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="3" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

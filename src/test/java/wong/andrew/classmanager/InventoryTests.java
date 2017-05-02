@@ -97,5 +97,5 @@ public class InventoryTests {
         //Assert
         assertEquals(expectedQuantity, actualQuantity);
     }
-    
+
 }
