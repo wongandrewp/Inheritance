@@ -22,4 +22,18 @@ public class Manager {
     public void addToInventory(Product product){
         inventory.getProducts().add(product);
     }
+
+    public void removeFromInventory(Product product){
+        inventory.getProducts().remove(product);
+    }
+
+    public void decreaseQuantityOfProductInInventory(Product product, int removedQuantity){
+        int initialQuantity = product.getQuantity();
+        product.setQuantity(initialQuantity - removedQuantity);
+    }
+
+    public void increaseQuantityOfProductInInventory(Product product, int increasedQuantity){
+        int initialQuantity = product.getQuantity();
+        product.setQuantity(initialQuantity + increasedQuantity);
+    }
 }
