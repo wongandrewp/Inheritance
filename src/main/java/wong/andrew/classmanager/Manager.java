@@ -4,10 +4,8 @@ package wong.andrew.classmanager;
  * Created by andrewwong on 5/2/17.
  */
 public class Manager {
-    private Inventory inventory = new Inventory();
+    private Inventory inventory;
 
-
-    public Manager(){}
     public Manager(Inventory inventory){
         this.inventory = inventory;
     }
@@ -24,5 +22,4 @@ public class Manager {
     public void addToInventory(Product product){
         inventory.getProducts().add(product);
     }
-
 }
