@@ -5,12 +5,15 @@ package wong.andrew.classmanager;
  */
 public class Main {
     public static void main(String[] args) {
-//        Product[] products = new Product[2];
-//        products[0] = new Apple(25);
-//        products[1] = new Banana(25);
-//       // products[2] = new Product(8.50, 2, 10);
-//
-//        double sum = Inventory.sumUpInventoryValue(products);
-//        System.out.println(sum);
+
+        Product apple = new Product(2.00, 001, 100);
+        Product banana = new Product(1.00, 002, 100);
+
+
+//        Inventory inventory = new Inventory();
+//        Manager manager = new Manager(inventory);
+//        manager.addToInventory(apple);
+//        manager.addToInventory(banana);
+//        System.out.println(manager.sumUpInventoryValue(inventory));
     }
 }

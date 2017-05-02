@@ -1,6 +1,9 @@
 package wong.andrew.classmanager;
 
 import org.junit.Test;
+
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 /**
@@ -11,30 +14,41 @@ public class InventoryTests {
     @Test
     public void sumUpInventoryValue_SimpleProducts_ReturnsSum(){
         //Arrange
-        Product[] products = new Product[2];
-        products[0] = new Product(2.00, 1, 5);
-        products[1] = new Product(1.00, 2,3);
-        double expectedSum = 13.00;
+        Product apple = new Product(2.00, 001, 5);
+        Product banana = new Product(1.00, 002, 5);
+        ArrayList<Product> products = new ArrayList<Product>();
+        products.add(apple);
+        products.add(banana);
+
+        Manager manager = new Manager();
+        Inventory inventory = new Inventory(products);
+
+        double expectedSum = 15.00;
 
         //Act
-        double actualSum = Inventory.sumUpInventoryValue(products);
+        double actualSum = manager.sumUpInventoryValue(inventory);
 
         //Assert
         assertEquals(expectedSum, actualSum, .001D);
     }
 
     @Test
-    public void sumUpInventoryValue_FruitProducts_ReturnsSum(){
+    public void addToInventory_AddProduct_ProductAddedToInventory(){
         //Arrange
-        Product[] products = new Product[2];
-        products[0] = new Apple(5);
-        products[1] = new Banana(3);
-        double expectedSum = 13.00;
+        Product orange = new Product(0.50, 003,1); //this product I want to add
+
+        Manager manager = new Manager(); //initialize manager
+
+        ArrayList<Product> products = new ArrayList<Product>(); //initialize an arraylist of products
+        products.add(orange); //add orange to arraylist of products
+        Inventory expectedInventory = new Inventory(products); //this is an expected inventory with an orange
+
+        Inventory inventory = new Inventory(); //this is actual inventory that manager deals with
 
         //Act
-        double actualSum = Inventory.sumUpInventoryValue(products);
+        manager.addToInventory(orange); //adds orange to inventory
 
         //Assert
-        assertEquals(expectedSum, actualSum, .001D);
+        assertEquals(expectedInventory, inventory); //assert both inventories have an orange
     }
 }

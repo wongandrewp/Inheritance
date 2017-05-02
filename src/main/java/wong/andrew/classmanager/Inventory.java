@@ -1,22 +1,25 @@
 package wong.andrew.classmanager;
 
+import java.util.ArrayList;
 /**
  * Created by andrewwong on 5/1/17.
  */
 public class Inventory {
 
-    Product[] products;
+    private ArrayList<Product> products = new ArrayList<>();
 
-    public Inventory(Product[] products){
+    public ArrayList<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(ArrayList<Product> products) {
         this.products = products;
     }
-    public static double sumUpInventoryValue(Product[] products){
-        double inventoryValue = 0;
-        for(Product product : products) {
-            double totalProductValue = product.getPrice() * product.getQuantity();
-            inventoryValue += totalProductValue;
-        }
-        return inventoryValue;
+
+    public Inventory(ArrayList<Product> products){
+        this.products = products;
     }
+
+    public Inventory(){}
 
 }
