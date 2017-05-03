@@ -35,7 +35,7 @@ public class TestAccountManager {
         AccountManager accountManager = new AccountManager(checkingAccount, savingsAccount, businessAccount);
         Account currentAccount = checkingAccount;
         String transactionSelected = "deposit";
-        double transactionAmount = 100;
+        double transactionAmount = 100.0;
         boolean expectedTransactionIsSuccessful = true;
 
         //Act

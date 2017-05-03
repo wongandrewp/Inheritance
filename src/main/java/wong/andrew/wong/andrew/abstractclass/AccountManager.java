@@ -32,15 +32,17 @@ public class AccountManager {
         }
     }
 
-    public boolean doTransaction(Account currentAccount,String transactionSelection, double transactionAmount) {
+    public boolean doTransaction(Account currentAccount, String transactionSelection, double transactionAmount) {
         boolean transactionIsSuccessful;
         switch (transactionSelection.toLowerCase()) {
             case "deposit":
                 currentAccount.deposit(transactionAmount);
                 transactionIsSuccessful = true;
+                break;
             case "withdrawal":
                 currentAccount.withdraw(transactionAmount);
                 transactionIsSuccessful = true;
+                break;
             default:
                 System.out.println("Invalid transaction");
                 transactionIsSuccessful = false;

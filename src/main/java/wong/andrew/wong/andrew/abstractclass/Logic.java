@@ -26,42 +26,19 @@ public class Logic {
         boolean atmIsOn = true;
         while(atmIsOn){
             String accountSelection = display.userStringInput("Please selects one of the following: checking, savings, business, off");
+            if (accountSelection.equalsIgnoreCase("off"))
+            {
+                break;
+            }
             currentAccount = accountManager.selectAccount(accountSelection);
             display.printBalance(currentAccount);
-//            switch (accountSelection.toLowerCase()) {
-//                case "checking":
-//                    currentAccount = checkingAccount;
-//                    display.printBalance(currentAccount);
-//                    break;
-//                case "savings":
-//                    currentAccount = savingsAccount;
-//                    display.printBalance(currentAccount);
-//                    break;
-//                case "business":
-//                    currentAccount = businessAccount;
-//                    display.printBalance(currentAccount);
-//                    break;
-//                default:
-//                    currentAccount = savingsAccount;
-//
-//            }
+
             String transactionSelection = display.userStringInput("Please select one of the following: withdrawal or deposit");
             double transactionAmount = display.userDoubleInput("Please enter an amount");
 
             accountManager.doTransaction(currentAccount, transactionSelection, transactionAmount);
 
-//            switch (transactionSelection.toLowerCase()) {
-//                case "deposit":
-//                    currentAccount.deposit(transactionAmount);
-//                    break;
-//                case "withdrawal":
-//                    currentAccount.withdraw(transactionAmount);
-//                    break;
-//                default:
-//                    System.out.println("Invalid transaction");
-//            }
             display.printBalanceAfterTransaction(currentAccount);
-
         }
     }
 }
