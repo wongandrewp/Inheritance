@@ -8,8 +8,9 @@ public class Main {
         Account checkingAccount = new CheckingAccount();
         Account savingsAccount = new SavingsAccount();
         Account businessAccount = new BusinessAccount();
+        Display display = new Display();
 
-        Logic logic = new Logic(checkingAccount, savingsAccount, businessAccount);
+        Logic logic = new Logic(checkingAccount, savingsAccount, businessAccount, display);
         logic.run();
     }
 }
