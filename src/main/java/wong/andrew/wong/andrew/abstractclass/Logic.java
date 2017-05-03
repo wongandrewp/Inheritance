@@ -11,11 +11,12 @@ public class Logic {
     AccountManager accountManager;
     Display display;
 
-    public Logic(Account checkingAccount, Account savingsAccount, Account businessAccount, Display display) {
+    public Logic(Account checkingAccount, Account savingsAccount, Account businessAccount, Display display, AccountManager accountManager) {
         this.checkingAccount = checkingAccount;
         this.savingsAccount = savingsAccount;
         this.businessAccount = businessAccount;
         this.display = display;
+        this.accountManager = accountManager;
     }
 
     public void run() {
@@ -47,7 +48,7 @@ public class Logic {
             String transactionSelection = display.userStringInput("Please select one of the following: withdrawal or deposit");
             double transactionAmount = display.userDoubleInput("Please enter an amount");
 
-            accountManager.doTransaction(transactionSelection, transactionAmount);
+            accountManager.doTransaction(currentAccount, transactionSelection, transactionAmount);
 
 //            switch (transactionSelection.toLowerCase()) {
 //                case "deposit":

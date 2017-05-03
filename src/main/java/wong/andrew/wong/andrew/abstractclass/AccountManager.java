@@ -9,13 +9,13 @@ public class AccountManager {
     private Account savingsAccount;
     private Account businessAccount;
 
-    public AccountManager(Account checkingAccount, Account savingsAccount, Account businessAccount){
+    public AccountManager(Account checkingAccount, Account savingsAccount, Account businessAccount) {
         this.checkingAccount = checkingAccount;
         this.savingsAccount = savingsAccount;
         this.businessAccount = businessAccount;
     }
 
-    public Account selectAccount(String accountSelection){
+    public Account selectAccount(String accountSelection) {
         switch (accountSelection.toLowerCase()) {
             case "checking":
                 currentAccount = checkingAccount;
@@ -32,17 +32,20 @@ public class AccountManager {
         }
     }
 
-    public void doTransaction(String transactionSelection, double transactionAmount){
+    public boolean doTransaction(Account currentAccount,String transactionSelection, double transactionAmount) {
+        boolean transactionIsSuccessful;
         switch (transactionSelection.toLowerCase()) {
             case "deposit":
                 currentAccount.deposit(transactionAmount);
-                break;
+                transactionIsSuccessful = true;
             case "withdrawal":
                 currentAccount.withdraw(transactionAmount);
-                break;
+                transactionIsSuccessful = true;
             default:
                 System.out.println("Invalid transaction");
+                transactionIsSuccessful = false;
         }
+        return transactionIsSuccessful;
     }
 
 }

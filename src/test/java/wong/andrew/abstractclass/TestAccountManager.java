@@ -25,4 +25,23 @@ public class TestAccountManager {
         //Assert
         assertEquals(expectedCurrentAccount, actualCurrentAccount);
     }
+
+    @Test
+    public void doTransaction_ValidTransactionSelected_TransactionIsSuccessful(){
+        //Arrange
+        Account checkingAccount = new CheckingAccount();
+        Account savingsAccount = new SavingsAccount();
+        Account businessAccount = new BusinessAccount();
+        AccountManager accountManager = new AccountManager(checkingAccount, savingsAccount, businessAccount);
+        Account currentAccount = checkingAccount;
+        String transactionSelected = "deposit";
+        double transactionAmount = 100;
+        boolean expectedTransactionIsSuccessful = true;
+
+        //Act
+        boolean actualTransactionIsSuccessful = accountManager.doTransaction(currentAccount, transactionSelected, transactionAmount);
+
+        //Assert
+        assertEquals(expectedTransactionIsSuccessful, actualTransactionIsSuccessful);
+    }
 }
