@@ -11,13 +11,16 @@ public class TestAccountManager {
     @Test
     public void selectAccount_ValidAccount_ReturnsAccountSelected(){
         //Arrange
-        CheckingAccount checkingAccount = new CheckingAccount();
-        AccountManager accountManager = new AccountManager();
+        Account checkingAccount = new CheckingAccount();
+        Account savingsAccount = new SavingsAccount();
+        Account businessAccount = new BusinessAccount();
+        AccountManager accountManager = new AccountManager(checkingAccount, savingsAccount, businessAccount);
         String accountSelection = "checking";
         Account expectedCurrentAccount = checkingAccount;
 
         //Act
         Account actualCurrentAccount = accountManager.selectAccount(accountSelection);
+
 
         //Assert
         assertEquals(expectedCurrentAccount, actualCurrentAccount);

@@ -26,6 +26,7 @@ public class Logic {
         while(atmIsOn){
             String accountSelection = display.userStringInput("Please selects one of the following: checking, savings, business, off");
             currentAccount = accountManager.selectAccount(accountSelection);
+            display.printBalance(currentAccount);
 //            switch (accountSelection.toLowerCase()) {
 //                case "checking":
 //                    currentAccount = checkingAccount;

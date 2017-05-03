@@ -5,28 +5,31 @@ package wong.andrew.wong.andrew.abstractclass;
  */
 public class AccountManager {
     private Account currentAccount;
-    private CheckingAccount checkingAccount;
+    private Account checkingAccount;
     private Account savingsAccount;
     private Account businessAccount;
 
-
+    public AccountManager(Account checkingAccount, Account savingsAccount, Account businessAccount){
+        this.checkingAccount = checkingAccount;
+        this.savingsAccount = savingsAccount;
+        this.businessAccount = businessAccount;
+    }
 
     public Account selectAccount(String accountSelection){
-//        switch (accountSelection.toLowerCase()) {
-//            case "checking":
-//                currentAccount = checkingAccount;
-//                return currentAccount;
-//            case "savings":
-//                currentAccount = savingsAccount;
-//                return currentAccount;
-//            case "business":
-//                currentAccount = businessAccount;
-//                return currentAccount;
-//            default:
-//                currentAccount = savingsAccount;
-//                return savingsAccount;
-//        }
-        return savingsAccount;
+        switch (accountSelection.toLowerCase()) {
+            case "checking":
+                currentAccount = checkingAccount;
+                return currentAccount;
+            case "savings":
+                currentAccount = savingsAccount;
+                return currentAccount;
+            case "business":
+                currentAccount = businessAccount;
+                return currentAccount;
+            default:
+                currentAccount = savingsAccount;
+                return savingsAccount;
+        }
     }
 
     public void doTransaction(String transactionSelection, double transactionAmount){
