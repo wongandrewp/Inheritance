@@ -5,7 +5,9 @@ package wong.andrew.wong.andrew.abstractclass;
  */
 public abstract class Account {
     private double balance;
-    private int pin;
+
+//    Used for security feature
+//    private int pin;
 
     public double getBalance(){
         return balance;
@@ -23,8 +25,10 @@ public abstract class Account {
             System.out.println("Insufficient Funds");
 
     }
-    public void setPin(int pin){
-        this.pin = pin;
-    }
+
+//    Used for security feature
+//    public void setPin(int pin){
+//        this.pin = pin;
+//    }
 
 }

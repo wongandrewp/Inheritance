@@ -5,6 +5,11 @@ package wong.andrew.wong.andrew.abstractclass;
  */
 public class Main {
     public static void main(String[] args) {
+        Account checkingAccount = new CheckingAccount();
+        Account savingsAccount = new SavingsAccount();
+        Account businessAccount = new BusinessAccount();
 
+        Logic logic = new Logic(checkingAccount, savingsAccount, businessAccount);
+        logic.run();
     }
 }
