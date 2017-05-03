@@ -15,19 +15,21 @@ public class Display {
         return userInput;
     }
 
-    public double userDoubleInput(String request){
+    public double userDoubleInput(String request) {
         System.out.println(request);
         Double userInput = scanner.nextDouble();
         return userInput;
     }
-    public void printBalance(Account account){
-        System.out.printf("Balance: $%.2f\n",account.getBalance());
-    }
-    public void printBalanceAfterTransaction(Account account){
-        System.out.printf("New Balance: $%.2f\n",account.getBalance());
+
+    public void printBalance(Account account) {
+        System.out.printf("Balance: $%.2f\n", account.getBalance());
     }
 
-    public void printWelcomeMessage(){
+    public void printBalanceAfterTransaction(Account account) {
+        System.out.printf("New Balance: $%.2f\n", account.getBalance());
+    }
+
+    public void printWelcomeMessage() {
         System.out.println("Welcome to ZipCode National Bank");
     }
 

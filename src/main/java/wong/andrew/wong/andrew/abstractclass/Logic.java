@@ -1,6 +1,7 @@
 package wong.andrew.wong.andrew.abstractclass;
 
 import java.util.Scanner;
+
 /**
  * Created by andrewwong on 5/1/17.
  */
@@ -24,10 +25,9 @@ public class Logic {
         display.printWelcomeMessage();
         //ask for pin for security feature
         boolean atmIsOn = true;
-        while(atmIsOn){
+        while (atmIsOn) {
             String accountSelection = display.userStringInput("Please selects one of the following: checking, savings, business, off");
-            if (accountSelection.equalsIgnoreCase("off"))
-            {
+            if (accountSelection.equalsIgnoreCase("off")) {
                 break;
             }
             currentAccount = accountManager.selectAccount(accountSelection);
