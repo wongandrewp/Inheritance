@@ -33,4 +33,8 @@ public class Display {
         System.out.println("Welcome to ZipCode National Bank");
     }
 
+    public void printExitMessage(){
+        System.out.println("Goodbye");
+    }
+
 }

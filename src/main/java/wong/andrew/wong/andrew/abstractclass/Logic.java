@@ -40,5 +40,6 @@ public class Logic {
 
             display.printBalanceAfterTransaction(currentAccount);
         }
+        display.printExitMessage();
     }
 }
