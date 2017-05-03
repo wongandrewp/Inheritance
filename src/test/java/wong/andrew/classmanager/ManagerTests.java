@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 /**
  * Created by andrewwong on 5/1/17.
  */
-public class InventoryTests {
+public class ManagerTests {
 
     @Test
     public void sumUpInventoryValue_SimpleProducts_ReturnsSum(){
