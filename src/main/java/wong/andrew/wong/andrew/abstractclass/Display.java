@@ -11,13 +11,14 @@ public class Display {
 
     public String userStringInput(String request) {
         System.out.println(request);
-        String userInput = scanner.nextLine();
+        String userInput = scanner.next();
         return userInput;
     }
 
     public double userDoubleInput(String request){
         System.out.println(request);
-        return scanner.nextDouble();
+        Double userInput = scanner.nextDouble();
+        return userInput;
     }
     public void printBalance(Account account){
         System.out.printf("Balance: $%.2f\n",account.getBalance());
