@@ -14,5 +14,5 @@ public abstract class Pet {
         this.name = name;
     }
 
-    public abstract void speak();
+    public abstract String speak();
 }

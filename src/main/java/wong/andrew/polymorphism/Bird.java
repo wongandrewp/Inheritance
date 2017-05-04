@@ -1,11 +1,11 @@
 package wong.andrew.polymorphism;
 
 /**
- * Created by andrewwong on 5/3/17.
+ * Created by andrewwong on 5/4/17.
  */
-public class Dog extends Pet {
+public class Bird extends Pet {
     public String speak(){
-        String sound = "Woof";
+        String sound = "Chirp";
         System.out.println(sound);
         return sound;
     }
