@@ -8,17 +8,32 @@ import static org.junit.Assert.*;
  */
 public class TestDisplay {
 
+//    @Test
+//    public void askHowManyPets(){
+//        //Arrange
+//        int numberOfPets = 3;
+//        int expectedNumberOfPets = 3;
+//        Display display = new Display();
+//
+//        //Act
+//        int actualNumberOfPets = display.askUserHowManyPets();
+//
+//        //Assert
+//        assertEquals(expectedNumberOfPets, actualNumberOfPets);
+//    }
+
     @Test
-    public void askHowManyPets(){
+    public void printName_HasName_NameIsPrinted(){
         //Arrange
-        int numberOfPets = 3;
-        int expectedNumberOfPets = 3;
+        Pet cat = new Cat();
+        cat.setName("Bongo");
+        String expectedNamePrinted = "Bongo";
         Display display = new Display();
 
         //Act
-        int actualNumberOfPets = display.askUserHowManyPets();
+        String actualNamePrinted = display.printName(cat);
 
         //Assert
-        assertEquals(expectedNumberOfPets, actualNumberOfPets);
+        assertEquals(expectedNamePrinted, actualNamePrinted);
     }
 }
