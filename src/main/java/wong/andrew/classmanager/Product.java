@@ -20,18 +20,6 @@ public class Product {
         return this.price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public int getQuantity() {
         return this.quantity;
     }

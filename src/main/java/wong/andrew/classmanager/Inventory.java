@@ -12,10 +12,6 @@ public class Inventory {
         return products;
     }
 
-    public void setProducts(ArrayList<Product> products) {
-        this.products = products;
-    }
-
     public Inventory(ArrayList<Product> products){
         this.products = products;
     }
